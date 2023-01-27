@@ -13,4 +13,10 @@ public class KafkaTopicConfig {
         return TopicBuilder.name("sergioruy")
                 .build(); //don't need use .partitions()
     }
+
+    @Bean
+    public NewTopic sergioruyJsonTopic() {
+        return TopicBuilder.name("sergioruy_json_topic")
+                .build(); //don't need use .partitions()
+    }
 }
